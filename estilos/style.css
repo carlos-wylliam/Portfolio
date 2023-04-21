@@ -22,7 +22,7 @@ nav {
   display: none;
 }
 header > p {
-    padding-left: 100px;
+    padding-left: 20%;
 }
 nav > ul > li {
   color: rgb(245, 242, 235);
