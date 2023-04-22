@@ -46,6 +46,7 @@ header > p {
   color: rgb(245, 242, 235);
   font-size: 2em;
   font-weight: bold;
+  padding-left: 10%;
 }
 .conteudo-principal {
   display: flex;
