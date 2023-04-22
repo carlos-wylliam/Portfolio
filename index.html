@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Wylliam | Desenvolvedor Front-End</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body onresize="mudouTamanho()">
@@ -45,33 +46,51 @@
             <h2><a name="projetos"></a>Projetos</h2>
             <section class="conteudo-destaque">
                 <h3>Destaques</h3>
-                <div class="containers"></div>
-                <div class="containers"></div>
+                <section class="estilo-containers">
+                    <div class="containers"></div>
+                    <div class="containers"></div>
+                        <div id="rmv1" class="containers"></div>
+                        <div id="rmv2" class="containers"></div>
+                        <div id="rmv3" class="containers"></div>
+                        <div id="rmv4" class="containers"></div>
+                </section>
             </section>
             <section class="all-projects">
                 <h3>Todos os projetos</h3>
-                <div class="containers"></div>
-                <div class="containers"></div>
+                <section class="estilo-containers">
+                    <div class="containers"></div>
+                    <div class="containers"></div>
+                    
+                        <div id="rmv5" class="containers"></div>
+                        <div id="rmv6" class="containers"></div>
+                        <div id="rmv7" class="containers"></div>
+                    <div id="rmv8" class="containers"></div>
+                   
+                </section>
             </section>
         </section>
         <footer>
             <h3><a name="contato"></a>Contatos</h3>
-            <span id="email" class="material-icons">mail</span>
-            <a href="mailto:carloswylliam023@gmail.com">
-                carloswylliam023@gmail.com
-            </a>
-            <span id="smartphone" class="material-icons">smartphone</span>
-            <p>(83) 99106-0367</p>
-            <a href="https://www.linkedin.com/in/carlos-wylliam-390305231/" target="_blank"><img class="teste" src="images/icone-linkedin.png" alt="icone-linkedin"></a>
-            <p>carlos-wylliam</p>
-            <a href="https://github.com/carlos-wylliam" target="_blank"><img class="teste" src="images/icone-github.png" alt="icone-github"></a>
-            <p>carlos-wylliam</p>
+            
+                <span id="email" class="material-icons">mail</span>
+                <a href="mailto:carloswylliam023@gmail.com">
+                    carloswylliam023@gmail.com
+                </a>
+                <span id="smartphone" class="material-icons">smartphone</span>
+                <p>(83) 99106-0367</p>
+            
+          
+                <a href="https://www.linkedin.com/in/carlos-wylliam-390305231/" target="_blank"><img class="teste" src="images/icone-linkedin.png" alt="icone-linkedin"></a>
+                <p>carlos-wylliam</p>
+                <a href="https://github.com/carlos-wylliam" target="_blank"><img class="teste" src="images/icone-github.png" alt="icone-github"></a>
+                <p>carlos-wylliam</p>
+            
         </footer>
     </main>
     <script>
         // funcão para que quando a tela mudar de tamanho as opções sejam forçadamente mostrado
         function mudouTamanho(){
-            if(window.innerWidth >= 768){
+            if(window.innerWidth >= 1500){
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'

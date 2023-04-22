@@ -160,6 +160,7 @@ header > p {
 .conteudo-destaque {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
 }
 .conteudo-destaque > h3 {
@@ -168,6 +169,7 @@ header > p {
   font-weight: 700;
   text-decoration: underline rgb(4, 186, 113);
   padding: 32px;
+  align-self: flex-start;
 }
 .containers {
   background-color: rgb(38, 38, 38);
@@ -177,6 +179,7 @@ header > p {
   align-self: center;
   border-radius: 10px;
   transition: all 0.5s ease 0s;
+  margin: 10px;
 }
 .containers:hover{
     transform: scale(1.1);
@@ -185,7 +188,8 @@ header > p {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
-  gap: 32px;
+  
+  align-items: center;
 }
 .all-projects > h3 {
   color: rgb(245, 242, 235);
@@ -193,6 +197,7 @@ header > p {
   font-weight: 700;
   text-decoration: underline rgb(4, 186, 113);
   padding: 32px;
+  align-self: flex-start;
 }
 footer {
   display: flex;
@@ -238,4 +243,31 @@ footer > p {
   padding: 20px;
   border-radius: 50px;
   background: rgb(4, 186, 113);
+}
+
+@media screen and (min-width:500px) and (max-width:991px) {
+  #rmv1{
+    display: none;
+  }
+  #rmv2{
+    display: none;
+  }
+  #rmv3{
+    display: none;
+  }
+  #rmv4{
+    display: none;
+  }
+  #rmv5{
+    display: none;
+  }
+  #rmv6{
+    display: none;
+  }
+  #rmv7{
+    display: none;
+  }
+  #rmv8{
+    display: none;
+  }
 }
