@@ -1,71 +1,85 @@
-@media screen and (min-width:768px) and (max-width:992px) {
-   body{
-    background: linear-gradient(68.15deg, #154342 16.62%, #212121 85.61%);
-    
-   }
+@media screen and (min-width:375px) and (max-width: 499px) {
+  header > p {
+   font-size: 1em;
+    border-right: 3px solid #04ba71;
+  }
+  nav>a{
+    padding: 10px;
+    font-size: 1em;
+  }
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .conteudo-principal > img {
+    padding-top: 48px;
+    width: 250px;
+  }
+  .conteudo-principal-escrito > h1 {
+    font-size: 1.4em;
+  }
+  .conteudo-principal-escrito > p {
+    font-size: 1em;
+  }
+}
 
-   
-   .conteudo-secundario > p{
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background: linear-gradient(68.15deg, #154342 16.62%, #212121 85.61%);
+  }
+
+  .conteudo-secundario > p {
     width: 60vw;
-   }
-   footer{
+  }
+  footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
-   }
-  .conteudo-principal{
+  }
+  .conteudo-principal {
     display: flex;
     flex-direction: row-reverse;
   }
-  .conteudo-principal-escrito > h1{
+  .conteudo-principal-escrito > h1 {
     font-size: 1.5em;
   }
-  .button1,
-.button2 {
-  width: 100%;
-  height: 50px;
-  margin: 10px 5px 5px;
-}
-   /* elemento pai dos containers */
-   .estilo-containers{
+  .button1,.button2 {
+    width: 100%;
+    height: 50px;
+    margin: 10px 5px 5px;
+  }
+  /* elemento pai dos containers */
+  .estilo-containers {
     display: flex;
     flex-direction: row;
-   }
-    
+  }
 }
+/* Dispositivos um pouco maiores que um celular tablet >> desktop */
+@media screen and (min-width: 992px) {
+  body {
+    background: linear-gradient(68.15deg, #0f2e2e 16.62%, #212121 85.61%);
+  }
+  .conteudo-secundario > p {
+    width: 800px;
+  }
+  .conteudo-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-@media screen and (min-width:992px) {
-    body{
-        background: linear-gradient(68.15deg, #0f2e2e 16.62%, #212121 85.61%);
-    }
-    .conteudo-secundario > p{
-        width: 800px;
-    }
-    .conteudo-destaque{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;   
-    }
-    header>span>a{
-        display: block;
-    }
-    header>#menu-hamburguer{
-        display: none;
-    }
-    
-   
-    .estilo-containers{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
-        justify-content: center;
-        align-content: center;
-    }
-    .all-projects{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .estilo-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-content: center;
+  }
+  .all-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

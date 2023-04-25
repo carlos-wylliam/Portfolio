@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
-        <span class="material-icons" id="menu-hamburguer" onclick="clickMenu()">menu</span>
         <p>Portfólio</p>
-        <nav id="itens">
+        <nav>
                 <a href="#sobre">Sobre</a>
                 <a href="#habilidades">Habilidades</a>
                 <a href="#projetos">Projetos</a>
@@ -86,24 +85,6 @@
             
         </footer>
     </main>
-    <script>
-        // funcão para que quando a tela mudar de tamanho as opções sejam forçadamente mostrado
-        // function mudouTamanho(){
-        //     if(window.innerWidth >= 1500){
-        //         itens.style.display = 'block'
-        //     } else {
-        //         itens.style.display = 'none'
-        //     }
-        // }
-        // função para criar o menu "hamburguer"
-        function clickMenu(){
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
 </script>
 </body>
 </html>
