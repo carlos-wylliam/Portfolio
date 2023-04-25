@@ -8,63 +8,54 @@ body {
   font-size: 100%;
   background-color: #212121;
 }
-header {
+header{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  
+  justify-content: space-around;
+  padding: 20px;
 }
-#menu-hamburguer {
-  font-size: 32px;
-  color: #04ba71;
-  align-self: flex-start;
-  padding: 25px;
-}
-nav {
-  display: none;
-}
-
-nav > ul > li {
-  color: rgb(245, 242, 235);
-  font-size: 1em;
-  font-weight: 400;
-  width: 100vw;
-  margin-top: 10px;
-  padding: 32px;
-  list-style: none;
-}
-nav > ul > li:hover{
-    background-color: #303030;
-    text-decoration: underline;
-    text-decoration-color: #04ba71;
-    width: 70%;
-}
-a {
-  color: rgb(245, 242, 235);
-  text-decoration: none;
-}
-header > p {
-  color: rgb(245, 242, 235);
+header>p{
+  color: #f5f2eb;
   font-size: 2em;
   font-weight: bold;
-  padding-left: 10%;
 }
+nav>a{
+  color: #f5f2eb;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+}
+nav>a:hover{
+  background-image: linear-gradient(to left, #329d9c, #04ba71);
+  border-radius: 5px;
+}
+
+
 .conteudo-principal {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding-top: 48px;
+  justify-content: space-evenly;
+  margin-bottom: 48px;
   border-top: 0.4px solid rgb(4, 186, 113);
+  
 }
 .conteudo-principal > img {
-  width: 250px;
+  width: 500px;
+  transition: width .3s, height .3s;
+  transition-timing-function: ease;
 }
-.conteudo-principal > h1 {
+.conteudo-principal-escrito > h1 {
   color: rgb(245, 242, 235);
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 2em;
 }
-.conteudo-principal > p {
+.conteudo-principal-escrito > p {
   color: rgb(124, 123, 123);
   font-weight: 400;
+  font-size: 1.1em;
 }
 .button1 {
   background-color: rgb(4, 186, 113);
@@ -80,9 +71,10 @@ header > p {
 }
 .button1,
 .button2 {
-  width: 60%;
+  width: 100%;
   height: 50px;
   margin: 10px 5px 5px;
+  
 }
 .button2 {
   background-color: rgb(33, 33, 33);
@@ -110,9 +102,11 @@ header > p {
 }
 .conteudo-secundario > p {
   padding-top: 32px;
-  width: 300px;
+  min-width: 300px;
   margin-bottom: 32px;
   font-weight: 400;
+  transition: width .3s, height .3s;
+  transition-timing-function: ease;
 }
 .conteudo-habilidades {
   display: flex;
@@ -121,7 +115,7 @@ header > p {
 }
 .conteudo-habilidades > h2 {
   padding-top: 10px;
-  color: rgb(245, 242, 235);
+  color: #f5f2eb;
   font-weight: 700;
   border-top: 0.4px solid rgb(4, 186, 113);
 }
@@ -162,6 +156,7 @@ header > p {
   flex-direction: column;
   align-items: center;
   gap: 32px;
+
 }
 .conteudo-destaque > h3 {
   color: rgb(245, 242, 235);
@@ -180,6 +175,7 @@ header > p {
   border-radius: 10px;
   transition: all 0.5s ease 0s;
   margin: 10px;
+  
 }
 .containers:hover{
     transform: scale(1.1);
@@ -206,6 +202,10 @@ footer {
   margin-bottom: 64px;
   border-top: 0.4px solid rgb(4, 186, 113);
   flex-flow: column wrap;
+}
+footer > a{
+  text-decoration: none;
+  color: #f5f2eb;
 }
 footer > h3 {
   color: rgb(245, 242, 235);
@@ -269,5 +269,73 @@ footer > p {
   }
   #rmv8{
     display: none;
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    
+ }
+ .containers{
+   width: 340px;
+ }
+  header>p{
+  display: none;
+  }
+  header>span{
+  color: #04ba71;
+  }
+  nav{
+    display: none;
+ }
+
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    padding-top: 48px;
+    border-top: 0.4px solid rgb(4, 186, 113);
+  }
+  .conteudo-principal > img {
+    width: 250px;
+  }
+  .conteudo-principal-escrito > h1 {
+    color: rgb(245, 242, 235);
+    font-weight: 700;
+    font-size: 1.3em;
+  }
+  .conteudo-principal-escrito > p {
+    color: rgb(124, 123, 123);
+    font-weight: 400;
+  }
+  .button1 {
+    background-color: rgb(4, 186, 113);
+    font-size: 1.3em;
+    font-weight: 700;
+    color: rgb(245, 242, 235);
+    box-shadow: rgba(4, 186, 113, 0.208) 2px 2px 6px;
+    border-style: none;
+    border-radius: 5px;
+  }
+  .button1:hover{
+      background-image: linear-gradient(to left, #329d9c, #04ba71);
+  }
+  .button1,
+  .button2 {
+    width: 100%;
+    height: 50px;
+    margin: 10px 5px 5px;
+  }
+  .button2 {
+    background-color: rgb(33, 33, 33);
+    font-size: 1.3em;
+    color: rgb(245, 242, 235);
+    font-weight: bold;
+    margin-bottom: 32px;
+    box-shadow: rgba(245, 242, 235, 0.16) 2px 2px 6px;
+    border-width: 0.4px;
+    border-style: solid;
+    border-color: rgb(245, 242, 235);
+    border-image: initial;
   }
 }

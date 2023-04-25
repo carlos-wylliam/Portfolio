@@ -12,29 +12,31 @@
 <body onresize="mudouTamanho()">
     <header>
         <span class="material-icons" id="menu-hamburguer" onclick="clickMenu()">menu</span>
-        <nav id="itens">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contatos</a></li>
-            </ul>
-        </nav>
         <p>Portfólio</p>
-        
+        <nav id="itens">
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contatos</a>
+        </nav>
     </header>
+    
     <main>
         <section class="conteudo-principal">
-            <img src="images/fundo-verde.png" alt="">
-            <h1>Olá, eu sou o Carlos Wylliam</h1>
-            <p>Desenvolvedor Front-End</p>
-            <button class="button1">Download CV</button>
-            <button class="button2">Contato</button>
+            <div class="conteudo-principal-escrito">
+                <h1>Olá, eu sou o Carlos Wylliam</h1>
+                <p>Desenvolvedor Front-End</p>
+                <button class="button1">Download CV</button>
+                <button class="button2">Contato</button>
+            </div>
+            <img src="images/foto-perfil.png" alt="">
         </section>
+        
         <section class="conteudo-secundario">
             <h2><a name="sobre"></a>Sobre</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum, dolorum ipsa hic nobis commodi maxime repellat animi, impedit sunt voluptas provident nam sapiente non quibusdam delectus autem nemo tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum, dolorum ipsa hic nobis commodi maxime repellat animi, impedit sunt voluptas provident nam sapiente non quibusdam delectus autem nemo tempore?</p>
         </section>
+       
         <section class="conteudo-habilidades">
             <h2><a name="habilidades"></a>Habilidades</h2>
             <div class="skills-icon">
@@ -42,6 +44,7 @@
                 <img class="style-box-icon"  src="images/icone-css.png" alt="icone-css">
             </div>
         </section>
+        
         <section class="conteudo-projetos">
             <h2><a name="projetos"></a>Projetos</h2>
             <section class="conteudo-destaque">
@@ -73,13 +76,9 @@
             <h3><a name="contato"></a>Contatos</h3>
             
                 <span id="email" class="material-icons">mail</span>
-                <a href="mailto:carloswylliam023@gmail.com">
-                    carloswylliam023@gmail.com
-                </a>
+                <a href="mailto:carloswylliam023@gmail.com">carloswylliam023@gmail.com</a>
                 <span id="smartphone" class="material-icons">smartphone</span>
                 <p>(83) 99106-0367</p>
-            
-          
                 <a href="https://www.linkedin.com/in/carlos-wylliam-390305231/" target="_blank"><img class="teste" src="images/icone-linkedin.png" alt="icone-linkedin"></a>
                 <p>carlos-wylliam</p>
                 <a href="https://github.com/carlos-wylliam" target="_blank"><img class="teste" src="images/icone-github.png" alt="icone-github"></a>
@@ -89,13 +88,13 @@
     </main>
     <script>
         // funcão para que quando a tela mudar de tamanho as opções sejam forçadamente mostrado
-        function mudouTamanho(){
-            if(window.innerWidth >= 1500){
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
+        // function mudouTamanho(){
+        //     if(window.innerWidth >= 1500){
+        //         itens.style.display = 'block'
+        //     } else {
+        //         itens.style.display = 'none'
+        //     }
+        // }
         // função para criar o menu "hamburguer"
         function clickMenu(){
             if(itens.style.display == 'block'){

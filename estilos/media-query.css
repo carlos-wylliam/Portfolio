@@ -3,6 +3,8 @@
     background: linear-gradient(68.15deg, #154342 16.62%, #212121 85.61%);
     
    }
+
+   
    .conteudo-secundario > p{
     width: 60vw;
    }
@@ -12,10 +14,19 @@
     flex-wrap: wrap;
     
    }
-   /* .containers{
-    width: 330px;
-   } */
-  
+  .conteudo-principal{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .conteudo-principal-escrito > h1{
+    font-size: 1.5em;
+  }
+  .button1,
+.button2 {
+  width: 100%;
+  height: 50px;
+  margin: 10px 5px 5px;
+}
    /* elemento pai dos containers */
    .estilo-containers{
     display: flex;
@@ -36,6 +47,13 @@
         flex-direction: column;
         align-items: flex-start;   
     }
+    header>span>a{
+        display: block;
+    }
+    header>#menu-hamburguer{
+        display: none;
+    }
+    
    
     .estilo-containers{
         display: flex;
