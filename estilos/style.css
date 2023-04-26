@@ -20,6 +20,12 @@ header > p {
   font-size: 1.5em;
   font-weight: bold;
 }
+dialog::backdrop{
+  background-color: #21212132;
+}
+dialog{
+  background-color: #212121;
+}
 nav > a {
   color: #f5f2eb;
   padding: 10px;
@@ -322,5 +328,8 @@ footer > p {
     border-style: solid;
     border-color: rgb(245, 242, 235);
     border-image: initial;
+  }
+  #modal{
+    display: none;
   }
 }
