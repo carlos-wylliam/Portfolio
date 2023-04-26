@@ -207,6 +207,7 @@ footer {
 footer > a {
   text-decoration: none;
   color: #f5f2eb;
+  padding: 32px;
 }
 footer > h3 {
   color: rgb(245, 242, 235);
