@@ -61,10 +61,13 @@
     width: 40px;
     border-radius: 10px;
   }
-  
+  .containers{
+    margin-bottom: 24px;
+  }
+
 }
 
-/* Tablet */
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     background: linear-gradient(68.15deg, #154342 16.62%, #212121 85.61%);
@@ -94,10 +97,15 @@
   .estilo-containers {
     display: flex;
     flex-direction: row;
+    gap: 25px;
+  }
+  .estilo-containers > div{
+    margin-bottom: 25px;
   }
   #modal{
     display: none;
   }
+ 
 }
 /* Dispositivos um pouco maiores que um celular tablet >> desktop */
 @media screen and (min-width: 992px) {
@@ -129,5 +137,5 @@
   #modal{
     display: none;
   }
- 
+  
 }

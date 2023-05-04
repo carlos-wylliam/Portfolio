@@ -1,0 +1,42 @@
+#todolist::before{
+    content: 'To do list';
+    font-size: 2em;
+    color: #f5f2eb;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.32);
+    padding-top: 23%;
+    padding-bottom: 23%;
+    padding-left: 106px;
+    padding-right: 106px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#c1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#modal_todolist{
+    padding: 20px;
+    border-style: none;
+    border-radius: 2px;
+    position: absolute;
+    margin: 32px;
+
+}
+#modal_todolist>button{
+    border-style: none;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 2px;
+    color: #f5f2eb;
+    background-color: #04ba71;
+    cursor: pointer;
+}
+#modal_todolist>button>a{
+    text-decoration: none;
+    color: #f5f2eb;
+}
