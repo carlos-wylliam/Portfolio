@@ -3,12 +3,6 @@
     font-size: 2em;
     color: #f5f2eb;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.32);
-    padding-top: 23%;
-    padding-bottom: 23%;
-    padding-left: 106px;
-    padding-right: 106px;
-    border-radius: 5px;
     cursor: pointer;
 }
 #c1{
@@ -17,6 +11,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+}
+#c1:hover{
+    opacity: 0.6;
 }
 #modal_todolist{
     padding: 20px;

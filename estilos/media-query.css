@@ -61,8 +61,8 @@
     width: 40px;
     border-radius: 10px;
   }
-  .containers{
-    margin-bottom: 24px;
+  div#c1{
+    margin-bottom: 35px;
   }
 
 }
