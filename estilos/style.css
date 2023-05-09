@@ -8,19 +8,21 @@ body {
   font-size: 100%;
   background-color: #212121;
 }
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  
+header{
+  padding: 30px;
+  background-color: #212121;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 99;
+  box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.057);
 }
+
 strong{
   color: #03d380;
 }
 header > p {
-  color: #f5f2eb;
+  color: #fffee6;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -30,6 +32,19 @@ dialog::backdrop{
 dialog{
   background-color: #212121;
 }
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+#Logo{
+  font-size: 1.5em;
+  color: #fffee6;
+  font-family: "DM Sans";
+  font-weight: bold;
+}
 nav > a {
   color: #f5f2eb;
   padding: 10px;
@@ -37,9 +52,11 @@ nav > a {
   font-size: 1em;
   font-weight: 400;
 }
-nav > a:hover {
-  background-image: linear-gradient(to left, #329d9c, #04ba71);
-  border-radius: 5px;
+nav>a:hover{
+  text-decoration: underline;
+  text-decoration-color: #fffee6;
+  color: #fffee6;
+  
 }
 
 .conteudo-principal {
@@ -47,6 +64,7 @@ nav > a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 170px;
   margin-bottom: 48px;
   border-top: 0.4px solid #04ba71;
 }

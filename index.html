@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="estilos/media-query.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style1.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   </head>
   <body>
     <header>
-      <p>Portfólio</p>
+      <!-- <p>Carlos Wylliam</p> -->
       <button id="modal"><span class="material-icons">menu</span></button>
+      
       <dialog>
         <nav>
           <a href="#sobre">Sobre</a>
@@ -23,12 +25,20 @@
         </nav>
         <button><span class="material-icons">close</span></button>
       </dialog>
+      
       <nav id="nav2">
+        <div id="Logo">Carlos Wylliam</div>
         <a href="#sobre">Sobre</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contatos</a>
+        
+        <div>
+          <a href="https://github.com/carlos-wylliam" target="_blank"><img src="images/github.png" alt="github"></a>
+          <a href="https://www.linkedin.com/in/carlos-wylliam-390305231/" target="_blank"><img src="images/linkedin-png.png" alt="linkedin"></a>
+        </div>
       </nav>
+      
     </header>
 
     <main>
@@ -127,7 +137,7 @@
       </footer>
     </main>
     <script>
-      window.alert('Em desenvolvimento estou ciente de bugs e erros')
+      // window.alert('Em desenvolvimento estou ciente de bugs e erros')
       const button = document.querySelector("button");
       const modal = document.querySelector("dialog");
       const buttonClose = document.querySelector("dialog button");
