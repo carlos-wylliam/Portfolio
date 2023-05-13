@@ -3,6 +3,7 @@
   font-family: "DM Sans", Arial, sans-serif;
   padding: 0px;
   margin: 0px;
+  text-decoration: none;
 }
 body {
   font-size: 100%;
@@ -220,17 +221,9 @@ nav>a:hover{
   align-self: flex-start;
 }
 .estilo-containers{
-  position: relative;
+  margin: auto;
 }
-#c1{
-  background-image: url(../images/todolist.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#c1>p{
-  color: black;
-}
+
 
 footer {
   display: flex;
@@ -281,6 +274,85 @@ footer > p {
   padding: 20px;
   border-radius: 50px;
   background: rgb(4, 186, 113);
+}
+.bloco1,.bloco2, .bloco3{
+  background-color: #2e2e2e;
+  width: 370px;
+  height: 470px;
+  padding: 10px;
+}
+.caixa{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 32px;
+  
+}
+.tela1, .tela2{
+  background-color: #212121;
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+ 
+}
+.tela1{
+  background-image: url(../images/todolist.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.descricao1, .descricao2>h1{
+  color: white;
+  
+}
+.descricao1>h1{
+  font-size: 1.6em;
+  border-bottom: 2px solid #27ae60;
+  padding: 10px;
+  
+}
+.descricao2>h1{
+  font-size: 1.6em;
+  border-bottom: 2px solid #27ae60;
+  padding: 10px;
+}
+.descricao1, .descricao2>p{
+  color: white;
+  text-align: justify;
+}
+.descricao1>p{
+  padding: 10px;
+  margin-top: 5px;
+  padding-top: 0px;
+  font-size: 1em;
+}
+.descricao2>p{
+  padding: 10px;
+  margin-top: 5px;
+  padding-top: 0px;
+  font-size: 1em;
+}
+.botoes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.botoes>button{
+  width: 120px;
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border-style: none;
+  font-size: 1em;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.307);
+  border-radius: 5px;
+  cursor: pointer;
+}
+button>a{
+  color: white;
 }
 
 @media screen and (min-width: 500px) and (max-width: 991px) {
