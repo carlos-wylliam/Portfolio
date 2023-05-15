@@ -10,7 +10,7 @@ body {
   background-color: #212121;
 }
 header{
-  padding: 30px;
+  padding: 15px;
   background-color: #212121;
   position: fixed;
   width: 100%;
@@ -22,17 +22,7 @@ header{
 strong{
   color: #03d380;
 }
-header > p {
-  color: #fffee6;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-dialog::backdrop{
-  background-color: #21212132;
-}
-dialog{
-  background-color: #212121;
-}
+
 nav{
   display: flex;
   flex-direction: row;
@@ -45,6 +35,7 @@ nav{
   color: #fffee6;
   font-family: "DM Sans";
   font-weight: bold;
+  
 }
 nav > a {
   color: #f5f2eb;
@@ -60,6 +51,7 @@ nav>a:hover{
   
 }
 
+
 .conteudo-principal {
   display: flex;
   flex-direction: row;
@@ -70,6 +62,7 @@ nav>a:hover{
   border-top: 0.4px solid #04ba71;
 }
 .conteudo-principal > img {
+  margin-top: 100px;
   width: 500px;
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
@@ -277,13 +270,16 @@ footer > p {
 }
 .bloco1,.bloco2, .bloco3{
   background-color: #2e2e2e;
-  width: 370px;
-  height: 470px;
+  width: 280px;
+  height: 480px;
   padding: 10px;
+}
+.bloco2{
+  height: 520px;
 }
 .caixa{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   gap: 32px;
@@ -292,7 +288,7 @@ footer > p {
 .tela1, .tela2{
   background-color: #212121;
   height: 200px;
-  width: 350px;
+  width: 260px;
   border-radius: 10px;
  
 }
@@ -441,4 +437,7 @@ button>a{
   #modal{
     display: none;
   }
+  /* #Logo{
+    display: none;
+  } */
 }

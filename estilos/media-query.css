@@ -3,24 +3,14 @@
    font-size: 1em;
     border-right: 3px solid #04ba71;
   }
-  main{
-    position: relative;
-  }
-  
-  nav>a{
-    padding: 10px;
-    margin-top: 30px;
-    font-size: 1em;
-    display: block;
-    text-align: center;
-  }
   .conteudo-principal {
     display: flex;
     flex-direction: column-reverse;
   }
   .conteudo-principal > img {
-    padding-top: 48px;
     width: 250px;
+    margin-top: 0px;
+    padding-top: 0px;
   }
   .conteudo-principal-escrito > h1 {
     font-size: 1.4em;
@@ -28,43 +18,15 @@
   .conteudo-principal-escrito > p {
     font-size: 1em;
   }
-  #nav2{
+  #Logo{
     display: none;
   }
-  dialog{
-    position: absolute;
-    height: 400px;
-    width: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    border-style: none;
-    border-radius: 10px;
-    backdrop-filter: blur(15px);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0,35);
-    -webkit-backdrop-filter: blur(15px);
-  }
-  dialog>button{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    margin-top: 30px;
-    border-style: none;
-    background-color: #04ba71;
-  }
-  #modal{
-    background-color: #04ba71;
-    border-style: none;
-    padding: 5px;
-    width: 40px;
-    border-radius: 10px;
-  }
-  div#c1{
-    margin-bottom: 35px;
-  }
 
+}
+@media screen and (min-width:500px) and (max-width:653px) {
+  #Logo{
+    display: none;
+  }
 }
 
 
@@ -73,9 +35,7 @@
     background: linear-gradient(68.15deg, #154342 16.62%, #212121 85.61%);
   }
 
-  .conteudo-secundario > p {
-    width: 60vw;
-  }
+  
   footer {
     display: flex;
     flex-direction: column;
@@ -102,9 +62,14 @@
   .estilo-containers > div{
     margin-bottom: 25px;
   }
-  #modal{
-    display: none;
-  }
+  
+ .conteudo-principal{
+  padding-top: 150px;
+ }
+nav{
+ margin: auto;
+  gap: 20px;
+}
  
 }
 /* Dispositivos um pouco maiores que um celular tablet >> desktop */
@@ -136,6 +101,18 @@
   }
   #modal{
     display: none;
+  }
+  .caixa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    
+  }
+  .conteudo-principal>img{
+    margin-top: 0px;
+    padding-top: 0px;
   }
   
 }
