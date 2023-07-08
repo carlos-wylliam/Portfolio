@@ -5,23 +5,30 @@
   margin: 0px;
   text-decoration: none;
 }
+
 body {
   font-size: 100%;
-  background-color: #212121;
+  background-color: #e2ebf1;
 }
+
 header{
   padding: 15px;
   background-color: #212121;
   position: fixed;
   width: 100%;
+  height: 100px;
   overflow: hidden;
   z-index: 99;
   box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.057);
 }
 
-strong{
-  color: #03d380;
+.redes_principais > a > img{
+  height: 50px;
 }
+strong{
+  color: #025b37;
+}
+
 
 nav{
   display: flex;
@@ -30,6 +37,7 @@ nav{
   justify-content: space-evenly;
   
 }
+
 #Logo{
   font-size: 1.5em;
   color: #fffee6;
@@ -37,46 +45,50 @@ nav{
   font-weight: bold;
   
 }
-nav > a {
-  color: #f5f2eb;
+
+header > nav > a {
+  color: #ffff;
   padding: 10px;
+  margin-top: 20px;
   text-decoration: none;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: bold;
 }
+
 nav>a:hover{
   text-decoration: underline;
   text-decoration-color: #fffee6;
-  color: #fffee6;
-  
 }
-
 
 .conteudo-principal {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 170px;
+  padding-top: 100px;
   margin-bottom: 48px;
   border-top: 0.4px solid #04ba71;
 }
+
 .conteudo-principal > img {
   margin-top: 100px;
   width: 500px;
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
+
 .conteudo-principal-escrito > h1 {
-  color: rgb(245, 242, 235);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 2em;
 }
+
 .conteudo-principal-escrito > p {
-  color: rgb(124, 123, 123);
+  color: rgb(0, 0, 0);
   font-weight: 400;
   font-size: 1.1em;
 }
+
 .button1 {
   background-color: #04ba71;
   font-size: 1.3em;
@@ -86,9 +98,11 @@ nav>a:hover{
   border-style: none;
   border-radius: 5px;
 }
+
 .button1:hover {
   background-image: linear-gradient(to left, #329d9c, #04ba71);
 }
+
 .button1,
 .button2 {
   width: 100%;
@@ -96,18 +110,17 @@ nav>a:hover{
   margin: 10px 5px 5px;
   cursor: pointer;
 }
+
 .button2 {
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(37, 37, 37);
   font-size: 1.3em;
   color: rgb(245, 242, 235);
   font-weight: bold;
   margin-bottom: 32px;
-  box-shadow: rgba(245, 242, 235, 0.16) 2px 2px 6px;
-  border-width: 0.4px;
-  border-style: solid;
-  border-color: rgb(245, 242, 235);
-  border-image: initial;
+  box-shadow: 1px 1px 1px 1px #2e2e2e;
+  border-style: none;
 }
+
 .conteudo-secundario {
   display: flex;
   flex-direction: column;
@@ -115,12 +128,15 @@ nav>a:hover{
   text-align: justify;
   color: white;
 }
+
 .conteudo-secundario > h2 {
   padding-top: 10px;
   font-weight: 700;
   border-top: 0.4px solid rgb(4, 186, 113);
 }
+
 .conteudo-secundario > p {
+  font-size: 1.1em;
   padding-top: 32px;
   width: 300px;
   margin-bottom: 32px;
@@ -128,17 +144,20 @@ nav>a:hover{
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
+
 .conteudo-habilidades {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .conteudo-habilidades > h2 {
   padding-top: 10px;
   color: #f5f2eb;
   font-weight: 700;
   border-top: 0.4px solid rgb(4, 186, 113);
 }
+
 .skills-icon {
   display: flex;
   flex-direction: row;
@@ -147,6 +166,7 @@ nav>a:hover{
   padding-top: 32px;
   gap: 32px;
 }
+
 .style-box-icon {
   background-color: rgb(38, 38, 38);
   box-shadow: rgba(0, 0, 0, 0.318) 1px 1px 10px;
@@ -161,9 +181,11 @@ nav>a:hover{
   border-left: var(--cor2);
   transition: all 0.5s ease 0s;
 }
+
 .style-box-icon:hover {
   transform: scale(1.1);
 }
+
 .conteudo-projetos > h2 {
   text-align: center;
   padding-top: 32px;
@@ -171,12 +193,14 @@ nav>a:hover{
   font-weight: 700;
   text-decoration: underline rgb(4, 186, 113);
 }
+
 .conteudo-destaque {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
 }
+
 .conteudo-destaque > h3 {
   color: rgb(245, 242, 235);
   font-size: 1.3em;
@@ -185,6 +209,7 @@ nav>a:hover{
   padding: 32px;
   align-self: flex-start;
 }
+
 .containers {
   background-color: rgb(38, 38, 38);
   box-shadow: rgba(0, 0, 0, 0.318) 1px 1px 10px;
@@ -195,9 +220,11 @@ nav>a:hover{
   transition: all 0.5s;
   margin: 10px;
 }
+
 .containers:hover {
   transform: scale(1.1);
 }
+
 .all-projects {
   display: flex;
   flex-direction: column;
@@ -205,6 +232,7 @@ nav>a:hover{
 
   align-items: center;
 }
+
 .all-projects > h3 {
   color: rgb(245, 242, 235);
   font-size: 1.3em;
@@ -213,10 +241,10 @@ nav>a:hover{
   padding: 32px;
   align-self: flex-start;
 }
+
 .estilo-containers{
   margin: auto;
 }
-
 
 footer {
   display: flex;
@@ -226,11 +254,13 @@ footer {
   border-top: 0.4px solid rgb(4, 186, 113);
   flex-flow: column wrap;
 }
+
 footer > a {
   text-decoration: none;
   color: #f5f2eb;
   padding: 32px;
 }
+
 footer > h3 {
   color: #f5f2eb;
   font-weight: 700;
@@ -238,6 +268,7 @@ footer > h3 {
   padding-top: 32px;
   padding-bottom: 20px;
 }
+
 #email {
   color: rgb(245, 242, 235);
   box-shadow: rgb(3, 158, 96) 20px -20px 60px inset,
@@ -246,6 +277,7 @@ footer > h3 {
   border-radius: 50px;
   background: rgb(4, 186, 113);
 }
+
 #smartphone {
   margin-top: 20px;
   color: rgb(245, 242, 235);
@@ -255,12 +287,14 @@ footer > h3 {
   border-radius: 50px;
   background: rgb(4, 186, 113);
 }
+
 footer > p {
   color: rgb(245, 242, 235);
   font-weight: 400;
   font-size: 1em;
   padding: 32px;
 }
+
 .teste {
   box-shadow: rgb(3, 158, 96) 20px -20px 60px inset,
     rgb(5, 214, 130) -20px 20px 60px inset;
@@ -268,15 +302,18 @@ footer > p {
   border-radius: 50px;
   background: rgb(4, 186, 113);
 }
+
 .bloco1,.bloco2, .bloco3{
   background-color: #2e2e2e;
   width: 280px;
   height: 480px;
   padding: 10px;
 }
+
 .bloco2{
   height: 520px;
 }
+
 .caixa{
   display: flex;
   flex-direction: column;
@@ -285,6 +322,7 @@ footer > p {
   gap: 32px;
   
 }
+
 .tela1, .tela2{
   background-color: #212121;
   height: 200px;
@@ -292,43 +330,51 @@ footer > p {
   border-radius: 10px;
  
 }
+
 .tela1{
   background-image: url(../images/todolist.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .descricao1, .descricao2>h1{
   color: white;
   
 }
+
 .descricao1>h1{
   font-size: 1.6em;
   border-bottom: 2px solid #27ae60;
   padding: 10px;
   
 }
+
 .descricao2>h1{
   font-size: 1.6em;
   border-bottom: 2px solid #27ae60;
   padding: 10px;
 }
+
 .descricao1, .descricao2>p{
   color: white;
   text-align: justify;
 }
+
 .descricao1>p{
   padding: 10px;
   margin-top: 5px;
   padding-top: 0px;
   font-size: 1em;
 }
+
 .descricao2>p{
   padding: 10px;
   margin-top: 5px;
   padding-top: 0px;
   font-size: 1em;
 }
+
 .botoes{
   display: flex;
   flex-direction: row;
@@ -336,6 +382,7 @@ footer > p {
   justify-content: center;
   gap: 20px;
 }
+
 .botoes>button{
   width: 120px;
   padding: 10px;
@@ -347,97 +394,7 @@ footer > p {
   border-radius: 5px;
   cursor: pointer;
 }
+
 button>a{
   color: white;
-}
-
-@media screen and (min-width: 500px) and (max-width: 991px) {
-  #rmv1 {
-    display: none;
-  }
-  #rmv2 {
-    display: none;
-  }
-  #rmv3 {
-    display: none;
-  }
-  #rmv4 {
-    display: none;
-  }
-  #rmv5 {
-    display: none;
-  }
-  #rmv6 {
-    display: none;
-  }
-  #rmv7 {
-    display: none;
-  }
-  #rmv8 {
-    display: none;
-  }
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-  }
-  .containers {
-    width: 340px;
-  }
-
-  .conteudo-principal {
-    display: flex;
-    flex-direction: column-reverse;
-
-    padding-top: 48px;
-    border-top: 0.4px solid rgb(4, 186, 113);
-  }
-  .conteudo-principal > img {
-    width: 250px;
-  }
-  .conteudo-principal-escrito > h1 {
-    color: rgb(245, 242, 235);
-    font-weight: 700;
-    font-size: 1.3em;
-  }
-  .conteudo-principal-escrito > p {
-    color: rgb(124, 123, 123);
-    font-weight: 400;
-  }
-  .button1 {
-    background-color: #04ba71;
-    font-size: 1.3em;
-    font-weight: 700;
-    color: rgb(245, 242, 235);
-    box-shadow: rgba(4, 186, 113, 0.208) 2px 2px 6px;
-    border-style: none;
-    border-radius: 5px;
-  }
-  .button1:hover {
-    background-image: linear-gradient(to left, #329d9c, #04ba71);
-  }
-  .button1,
-  .button2 {
-    width: 100%;
-    height: 50px;
-    margin: 10px 5px 5px;
-  }
-  .button2 {
-    background-color: rgb(33, 33, 33);
-    font-size: 1.3em;
-    color: rgb(245, 242, 235);
-    font-weight: bold;
-    margin-bottom: 32px;
-    box-shadow: rgba(245, 242, 235, 0.16) 2px 2px 6px;
-    border-width: 0.4px;
-    border-style: solid;
-    border-color: rgb(245, 242, 235);
-    border-image: initial;
-  }
-  #modal{
-    display: none;
-  }
-  /* #Logo{
-    display: none;
-  } */
 }
